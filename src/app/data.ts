@@ -45,7 +45,7 @@ export const mainCards: Card[] = [
   new Card('Vårtmonster', 35, 39, 40, 20, 85, 'Vårtmonster.webp'),
   new Card('Varulven', 65, 65, 45, 25, 80, 'Varulven.webp'),
   new Card('Zombien Leif', 20, 15, 30, 1, 69, 'Zombien Bert.webp'),
-  new Card('Kodmonster', 20, 15, 30, 1, 69, 'Programmerarmonster.webp'),
+  new Card('Kodmonster', 18, 16, 35, 90, 40, 'Programmerarmonster.webp'),
 ];
 
 export const specialCards: SpecialCard[] = [
