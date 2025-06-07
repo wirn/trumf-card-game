@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { mainCards, specialCards } from './data';
 
 import { Card, SpecialCard } from './card.model';
@@ -19,7 +18,7 @@ export class AppComponent implements OnInit {
   }
 
   getCards() {
-    const miltiplier: number = 8;
+    const miltiplier: number = 1;
     const nrOfCardsOnPage: number = 6;
     const end: number = miltiplier * nrOfCardsOnPage;
     const start: number = end - nrOfCardsOnPage;
