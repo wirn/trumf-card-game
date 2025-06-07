@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { mainCards, specialCards } from './data';
-import { CommonModule } from '@angular/common';
+
 import { Card, SpecialCard } from './card.model';
 
 @Component({
     selector: 'app-root',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })

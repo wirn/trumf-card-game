@@ -1,27 +1,27 @@
 <div class="page">
   <div class="wrapper">
-    <div class="card" *ngFor="let card of monsters">
-      <img [src]="'../assets/' + card.image" />
-
-      <h2>{{ card.name }}</h2>
-
-      <div class="properties">
-        <p>Styrka: {{ card.strength }}</p>
-        <p>Snabbhet: {{ card.agility }}</p>
-        <p>Storlek: {{ card.size }}</p>
-        <p>Interligens: {{ card.intelligence }}</p>
-        <p class="scariness">Läskighet: {{ card.scariness }}</p>
+    @for (card of monsters; track card) {
+      <div class="card">
+        <img [src]="'../assets/' + card.image" />
+        <h2>{{ card.name }}</h2>
+        <div class="properties">
+          <p>Styrka: {{ card.strength }}</p>
+          <p>Snabbhet: {{ card.agility }}</p>
+          <p>Storlek: {{ card.size }}</p>
+          <p>Interligens: {{ card.intelligence }}</p>
+          <p class="scariness">Läskighet: {{ card.scariness }}</p>
+        </div>
       </div>
-    </div>
+    }
 
-    <div class="card card-special" *ngFor="let specialCard of specialMonsters">
-      <img [src]="'../assets/' + specialCard.image" />
-
-      <h2>{{ specialCard.name }}</h2>
-
-      <p style="padding: 0.5rem">
-        {{ specialCard.description }}
-      </p>
-    </div>
+    @for (specialCard of specialMonsters; track specialCard) {
+      <div class="card card-special">
+        <img [src]="'../assets/' + specialCard.image" />
+        <h2>{{ specialCard.name }}</h2>
+        <p style="padding: 0.5rem">
+          {{ specialCard.description }}
+        </p>
+      </div>
+    }
   </div>
 </div>
